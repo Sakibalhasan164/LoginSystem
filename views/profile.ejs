@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom:40px ;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-links{
+    /* background-color: lightcyan; */
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh
+
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(252, 66, 66);
+    width: 43%;
+    height: 50px;
+    padding: 10px;
+    margin: 2px;
+    line-height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.nav-links a:hover{
+    transform: scale(1.09);
+}
+
+
+</style>
+<body>
+  <%- include("./partials/head.ejs")%>
+
+ 
+    <% if(posts) {%>
+    <% for(i=0;i<posts.length;i++) {%>
+    <h1><%= posts[i].title %></h1>
+    <h1><%= posts[i].post %></h1>
+    <%}%>
+    <%}%>
+
+</body>
+</html>

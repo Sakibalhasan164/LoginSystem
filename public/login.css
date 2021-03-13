@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body{
+     width: 100%;
+     height: 100vh;
+     /* background-color: lightskyblue; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .container{
+     /* z-index: 1; */
+     /* background-color: lightgreen; */
+     width: 50%;
+     height: 60vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around; 
+     border-radius: 5px;
+     box-shadow: 10px 1px 55px rgb(0,0,0,0.3);
+     /* position: relative;  */
+     /* padding: 30px; */
+ }
+ 
+ .card{
+     /* z-index: 0; */
+     width: 100%;
+     /* background-color: pink; */
+     padding: 4px;
+ }
+ 
+ h1{
+     text-align: center;
+ }
+ h3{
+     text-align: center;
+ }
+ 
+ 
+ 
+ .form{
+     display: flex;
+     flex-direction: column;
+     padding: 4px;
+     /* background-color:lightgray; */
+ }
+ input{
+     width: 100%;
+     height: 30px;
+     border: 1px solid black;
+     /* border: none; */
+     margin-bottom: 13px;
+     border-radius: 4px;
+ }
+ button{
+     width: 100%;
+     height: 30px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     background-color:rgb(57, 171, 247);
+     color: white;
+ }
+ button:hover{
+     transform: scale(1.05);
+ }
+ 
+ 
+ .buttons{
+     /* background-color: red; */
+     width: 50%;
+     display: flex;
+     position: absolute;
+     top: 70px;
+     left: 35%;
+     padding: 8px;
+     margin: 0 auto;
+ }
+ 
+ a{
+     background-color: rgb(252, 66, 66);
+     display: inline-block;
+     width: 30%;
+     margin: 7px;
+     height: 30px;
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     line-height: 30px;
+     border-radius: 5px;
+ }
+ a:hover{
+     transform: scale(1.09);
+ }
+ 
+ .active {
+     background-color: rgb(57, 171, 247);
+     color: white;
+     transform: scale(1.09);
+   }
+ 
+ 
+ p{
+     color: red;
+ }
+.register-here{
+     color: black !important;
+ }
+
+ span{
+     color: red;
+     cursor: pointer;
+ }

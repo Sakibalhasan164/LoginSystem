@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Rout</title>
+    <link rel="stylesheet" href="post.css">
+
+</head>
+<body>
+    
+<!-- navigation bar -->
+<div class="nav">
+  <div class="logo"><h1>LOGO</h1></div>
+  <div class="nav-links">
+    <a href="#" class="name">sakib hasan</a>
+   <a href="/logOut">Log Out</a>
+   <a href="/allPosts">All posts</a>
+  </div>
+ </div>
+
+
+
+<div class="card">
+<form class="form">
+<label for="title">Title :</label>
+<input type="text" name="title" required><br><br>
+<label for="post">Post :</label>
+<textarea name="post"></textarea required><br><br>
+<button>Post</button>
+</form>
+</div>
+
+
+
+<script>
+const form=document.querySelector(".form")
+console.log(form);
+
+form.addEventListener("submit",async(e)=>{
+    e.preventDefault()
+    const post={
+     title:form.title.value,
+     post:form.post.value,
+    } 
+  const request=await fetch("/protected",{
+    method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(post),
+  })
+
+const response=await request.json();
+if(response){
+  document.location.href=response.redirect
+}
+console.log(response);
+})
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+GET http://localhost:3000 HTTP/1.1
+###
+GET http://localhost:3000/log-in HTTP/1.1
+###
+GET http://localhost:3000/register HTTP/1.1
+
+###
+POST http://localhost:3000/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"hassed Password",
+    "email":"thisisnod=fgfe@gmail.com",
+    "password":"kjdjkdjkjkjfk",   
+}
+
+###
+POST http://localhost:3000/protected HTTP/1.1
+Content-Type: application/json
+
+{
+"title":"mitu's second post",
+"post":"second post"
+}
+###
+POST http://localhost:3000/log-in HTTP/1.1
+Content-Type: application/json
+
+{
+  "email":"isratjahanmitu@gmail.com",
+  "password":"dddddd"
+}

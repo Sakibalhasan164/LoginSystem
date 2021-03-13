@@ -1,0 +1,7 @@
+1:hassing passowrd (done);
+
+2:setting cookies and jwt(done);
+
+3:sign in the users(done);
+
+this project statted 28th november..its 7th december now..and this project is finnaly done😎😑😑

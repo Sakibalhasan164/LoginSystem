@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <%- include("./partials/head.ejs") %>
+
+<!-- add an post -->
+<div class="addPost">
+    <a class="add" href="/protected"><i class="fa fa-plus"></i></a>
+</div>   
+
+<h1 class="yourPosts">Your posts</h1>
+
+<div class="postContainer">
+<div class="posts">
+    
+<div class="postCard">
+    
+    <% if(post) {%>
+    <% for(i=0;i<post.length;i++) {%>
+   <h2 class="title"><%= post[i].title %></h2>
+   <h4 class="postItself"><%= post[i].post %></h4>
+   <div class="white"></div>
+    <%}%>
+   <%}%>
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>

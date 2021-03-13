@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        
+            <div class="buttons">
+            <a href="/register" class="btn ">Sign up</a>
+            <a href="/log-in" class="btn active">Sign in</a>
+            </div>
+       <div class="container">
+       <div class="card">
+           <h1 class="title">Log in</h1>
+           <h3 class="sub-title">Join the <span class="fun">Fun</span></h3>
+       <div class="form">
+          
+           <form class="form">
+           <label for="email">Email :</label>
+           <input type="email" name="email">
+           <p class="email-Err"></p>
+           <label for="password">Password :</label>
+           <input type="password" name="password">
+           <p class="password-Err"></p>
+           <button>Submit</button>
+          </form>
+           
+        </div>
+    
+    
+       </div>
+    
+       </div>
+    
+<script>
+    const emailErr=document.querySelector(".email-Err")
+    const passwordErr=document.querySelector(".password-Err")
+    const form=document.querySelector("form")
+    // console.log(form.email);
+//submitEvent
+form.addEventListener("submit",async(e)=>{
+    e.preventDefault()
+    console.log("click");
+
+    emailErr.textContent=""
+    passwordErr.textContent=""
+    // const name=form.name.value
+    // const email=form.email.value
+    // const password=form.password.value
+    const credentials={
+        email:form.email.value,
+        password:form.password.value
+    }
+
+   console.log(credentials);
+
+const request=await fetch("/log-in",{
+    method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(credentials),  
+})
+const response= await request.json()
+if(response.redirect ==="/"){
+document.location.href=response.redirect
+}else if(response.message==="this email is not regiseter"){
+    emailErr.textContent=response.message
+}else{
+    passwordErr.textContent=response.message
+}
+
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+this is a typing test for me (12/9/2020)
+
+
+Usain Bolt 
+
+
+Usain St Leo Bolt was born 21 August, is a Jamaican former spinter,widly considerd to be the greatest sprinter of all time.He is a world record holder in 100 meteres,200 meters and 4 * 100 meters relay.
+An eight-time Olympic gold medalist, Bolt is the only sprinter to win Olympic 100m and 200m titiles at three consecutive Olympics(2008,2012 and 2016). He also won two 4* 100 relay gold medals.
+He gained worldwidefame for his double sprint victory in world record times at the 2008 Beijing Olympics, which made him the first person to hold both records since fully automatic time became mandatory.
+An eleven-time World Champion, he won consecutive world Championship 100m, 200m and 4*100 meters relay gold medals from 2009 to 2015 with the exception of a 100m false start in 2009. He is the most Sucessful athelte of the World Championship titles in the 200m and is one of the most successful in the 100m with three titles.
+
+
+JavaScript 
+JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled and multi paradigm.It has curly-bracket syntax,dynamic typing,prototype-based object-orietion,and first-class functions.
+Alongside HTML and CSS, JavaScript is one of the core teconologies of the World Wide Web.
+Javascript enables interactive web pages and is an essential part of web applications.
+The vast majority of websites use it for client-side page behavior,and all major web browers have a dedicated javaScript engine to execute it.
+As an multi-paradigm language, Javascript suppots event-dirven,functional, and imperative programming styles.It has application programming interfaces(APIs) for working with text,dates,regular expressions, standard data  structures,and the Document Object Model(DOM).However,the language itself does not include any input/output(I/O),such as networking storage,or graphics facilites,as the host environment(usuall a wab browser) provides those APIs.
+javaScript engines were originally used only in web browsers, but they are now embedded in some servers, usuall via Node.js. They are also embedded in variety of application created with frameworks such as Electron and Cordova.
+Althogh there are similarites between JavaScript and Jave,including language name,syntax,and respective standard libraries,the two languages are distinct and differ greatly in design.
+
+
+JSON
+JSON, or javaScript Object Notation,is a general-pupose data intechange formate that defined as a subset of javaScript's object litral syntax.
